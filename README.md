@@ -6,10 +6,10 @@ ganache-cli -f https://mainnet.infura.io/v3/c44e31d9ba1947709f66f9cd73cdc656 -e 
 
 ### 2. 开发技术栈
 
-Node.js：基础运行环境
-Ethers.js：以太坊JS开发库
-Solidity：套利智能合约
-Infura：提供以太坊接入访问点
+* Node.js：基础运行环境
+* Ethers.js：以太坊JS开发库
+* Solidity：套利智能合约
+* Infura：提供以太坊接入访问点
 
 ### 3. NodeJs循环检查套利机会
 
@@ -26,9 +26,10 @@ Infura：提供以太坊接入访问点
 
 ### 4. 套利智能合约
 
-####  符合条件后执行过程
+#### 符合条件后执行过程
 
 单路径兑换：sushi ETH的price < uniV3 ETH的price
+
 1. 借sushi 100个ETH
 2. 套利合约在 uniV3 100个ETH兑换出 340000 USDC
 3. 查询应还数额为330000，还sushi 330000 USDC。
