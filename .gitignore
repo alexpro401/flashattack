@@ -1,6 +1,0 @@
-package-lock.json
-yarn.lock
-.secret
-node_modules
-build
-bin
