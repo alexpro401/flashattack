@@ -1,17 +1,14 @@
 ## 开发步骤
 
-### 1. 开启测试分叉链，测试合约执行
+### 1. 开发技术栈
 
-ganache-cli -f https://mainnet.infura.io/v3/c44e31d9ba1947709f66f9cd73cdc656 -e 100000
-
-### 2. 开发技术栈
-
-* Node.js：基础运行环境
+* Node.js：基础运行环境，开发后端
 * Ethers.js：以太坊JS开发库
-* Solidity：套利智能合约
+* Solidity：开发套利智能合约
 * Infura：提供以太坊接入访问点
+* ganache-cli：分叉以太坊主网，测试合约
 
-### 3. NodeJs循环检查套利机会
+### 2. NodeJs循环检查套利机会
 
 后端采用NodeJs开发：
 利用Infura节点，获取主网上产出的每个新区块上的价格。
@@ -24,7 +21,7 @@ ganache-cli -f https://mainnet.infura.io/v3/c44e31d9ba1947709f66f9cd73cdc656 -e 
 4. 对比1、2得出的结果，计算扣除gas后获得“价差”或可能的利润空间；
 5. 符合条件则调用套利合约方法swapPath
 
-### 4. 套利智能合约
+### 3. 套利智能合约
 
 #### 符合条件后执行过程
 
